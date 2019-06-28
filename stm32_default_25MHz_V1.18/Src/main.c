@@ -98,6 +98,10 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
+  HAL_GPIO_WritePin(INH_12_GPIO_Port, INH_12_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(INH_19_GPIO_Port, INH_19_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LED_G_GPIO_Port, LED_G_Pin, GPIO_PIN_SET);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
