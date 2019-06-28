@@ -23,7 +23,7 @@
 #include "can.h"
 #include "i2c.h"
 #include "sdio.h"
-#include "usb_otg.h"
+#include "usb_device.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -95,7 +95,7 @@ int main(void)
   MX_CAN1_Init();
   MX_I2C1_Init();
   MX_SDIO_SD_Init();
-  MX_USB_OTG_FS_PCD_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
